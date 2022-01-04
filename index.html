@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <img src="currency.png" img align="center" width="250">
+    </center>
+    <br/>
+    <br/>
+    <div class="exchange-box" img align="center">
+        <!-- 박스1 -->
+        <div class="dropdown" >
+            <button class="dropbtn" id="from-button" >USD</button>
+            <div class="dropdown-content" id="from-currency-list">
+                <a href="#">KRW</a>
+                <a href="#">USD</a>
+                <a href="#">VND</a>
+            </div>
+            <!-- <div>달러</div> -->
+        </div>
+        <!-- 환전정보 -->
+        <div class="input-area">
+            <input type="number" id="from-input" onkeyup="convert()"/>
+        </div>
+        <div id="from-name" onkeydown="currency_name(this.id)">달러</div>    
+
+    </div>
+    <!-- 등호 삽입 -->
+    <h1 text align="center">=</h1> 
+    <div class="exchange-box" align="center">
+        <!-- 박스2  -->
+        <div class="dropdown">
+            <button class="dropbtn" id="to-button">USD</button>
+            <div class="dropdown-content" id="to-currency-list">
+                <a href="#">KRW</a>
+                <a href="#">USD</a>
+                <a href="#">VND</a>
+            </div>
+        </div>
+        <!-- 환전정보 -->
+        <div class="input-area">
+            <input type="number" id="to-input" , onkeyup="convert_to()"/>
+        </div>
+        <div id="to-name" onkeydown="currency_name(this.id)">달러</div>    
+
+    </div>
+    <!-- 메인스크립트 -->
+    <script src="main.js"></script>
+</body>
+</html>
